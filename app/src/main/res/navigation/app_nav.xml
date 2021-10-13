@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/fragmentSplashScreen">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="uz.gita.todolist.Screens.MainScreen"
+        android:label="FragmentMain"
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_fragmentMain_to_infoScreen2"
+            app:destination="@id/infoScreen2" />
+        <action
+            android:id="@+id/action_fragmentMain_to_screenContacts"
+            app:destination="@id/screenContacts" />
+        <action
+            android:id="@+id/action_fragmentMain_to_birthdayScreen"
+            app:destination="@id/birthdayScreen" />
+        <action
+            android:id="@+id/action_fragmentMain_to_emailScreen"
+            app:destination="@id/emailScreen" />
+        <action
+            android:id="@+id/action_fragmentMain_to_websiteScreen"
+            app:destination="@id/websiteScreen" />
+        <action
+            android:id="@+id/action_fragmentMain_to_bankAccountScreen"
+            app:destination="@id/bankAccountScreen" />
+        <action
+            android:id="@+id/action_fragmentMain_to_appointmentScreen"
+            app:destination="@id/appointmentScreen" />
+        <action
+            android:id="@+id/action_fragmentMain_to_bookScreen"
+            app:destination="@id/bookScreen" />
+        <action
+            android:id="@+id/action_fragmentMain_to_articleScreen"
+            app:destination="@id/articleScreen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSplashScreen"
+        android:name="uz.gita.todolist.Screens.SplashScreen"
+        android:label="FragmentSplashScreen"
+        tools:layout="@layout/screen_splash">
+        <action
+            android:id="@+id/action_fragmentSplashScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentSplashScreen"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/infoScreen2"
+        android:name="uz.gita.todolist.Screens.InfoScreen"
+        android:label="InfoScreen"
+        tools:layout="@layout/screen_info"/>
+    <fragment
+        android:id="@+id/screenContacts"
+        android:name="uz.gita.todolist.Screens.ContactsScreen"
+        android:label="ScreenContacts" >
+        <action
+            android:id="@+id/action_screenContacts_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdayScreen"
+        android:name="uz.gita.todolist.Screens.BirthdayScreen"
+        android:label="BirthdayScreen" >
+        <action
+            android:id="@+id/action_birthdayScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailScreen"
+        android:name="uz.gita.todolist.Screens.EmailScreen"
+        android:label="EmailScreen" >
+        <action
+            android:id="@+id/action_emailScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/websiteScreen"
+        android:name="uz.gita.todolist.Screens.WebsiteScreen"
+        android:label="WebsiteScreen" >
+        <action
+            android:id="@+id/action_websiteScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankAccountScreen"
+        android:name="uz.gita.todolist.Screens.BankAccountScreen"
+        android:label="BankAccountScreen" >
+        <action
+            android:id="@+id/action_bankAccountScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentScreen"
+        android:name="uz.gita.todolist.Screens.AppointmentScreen"
+        android:label="AppointmentScreen" >
+        <action
+            android:id="@+id/action_appointmentScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookScreen"
+        android:name="uz.gita.todolist.Screens.BookScreen"
+        android:label="BookScreen" >
+        <action
+            android:id="@+id/action_bookScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleScreen"
+        android:name="uz.gita.todolist.Screens.ArticleScreen"
+        android:label="ArticleScreen" >
+        <action
+            android:id="@+id/action_articleScreen_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:popUpTo="@id/fragmentMain"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

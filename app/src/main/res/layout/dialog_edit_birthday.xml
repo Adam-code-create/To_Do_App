@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:id="@+id/action_bar_add_screen"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/main_color"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit birthday"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/action_bar_add_screen"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="Name"
+        android:id="@+id/titleOutline"
+        app:boxStrokeColor="@color/main_color"
+        app:hintTextColor="@color/main_color"
+        app:layout_constraintTop_toBottomOf="@id/action_bar_add_screen"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editBirthName"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="Date"
+        android:id="@+id/dateOutline"
+        app:boxStrokeColor="@color/main_color"
+        app:hintTextColor="@color/main_color"
+        app:layout_constraintTop_toBottomOf="@id/titleOutline"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editBirthdayDate"
+            android:focusableInTouchMode="false"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="Age"
+        android:id="@+id/ageOutline"
+        app:boxStrokeColor="@color/main_color"
+        app:hintTextColor="@color/main_color"
+        app:layout_constraintTop_toBottomOf="@id/dateOutline"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAgeInput"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/saveEditBirthday"
+        android:text="Save"
+        android:layout_margin="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/add_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageOutline"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/cancelEditBirthday"
+        android:text="Cancel"
+        android:layout_margin="24dp"
+        android:textColor="@color/main_color"
+        android:background="@drawable/cancel_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageOutline"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

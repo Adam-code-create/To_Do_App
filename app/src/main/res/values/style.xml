@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/main_color</item>
+
+    </style>
+
+    <style name="error" parent="Widget.MaterialComponents.TextInputLayout.FilledBox" >
+        <item name="errorTextColor">@color/main_color</item>
+
+    </style>
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+</resources>

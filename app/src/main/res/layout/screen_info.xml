@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoScreen"
+    tools:context=".Screens.InfoScreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/action_bar"
+        android:background="@color/main_color"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/timer_bg"
+        app:layout_constraintTop_toBottomOf="@id/action_bar"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/bottomSide"
+        android:background="@drawable/bottom_bg"
+        app:layout_constraintTop_toBottomOf="@id/action_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/bottomLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic__back"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:id="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Until deadline"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/remain"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Reaming time"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="center"
+        android:id="@+id/remainTime"
+        android:textSize="18sp"
+        android:background="@drawable/remain_time_bg"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/remain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_title"
+        android:id="@+id/noteImg"
+        android:padding="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/action_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:layout_marginTop="44dp"
+        android:id="@+id/textTitleInfo"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/action_bar"
+        app:layout_constraintLeft_toRightOf="@id/noteImg"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_description"
+        android:id="@+id/desImg"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@id/noteImg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/textDescriptionInfo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textTitleInfo"
+        app:layout_constraintLeft_toRightOf="@id/desImg"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info"
+        android:id="@+id/status"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@id/desImg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/statusInfo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textDescriptionInfo"
+        app:layout_constraintLeft_toRightOf="@id/desImg"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_timer"
+        android:id="@+id/timer"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@id/status"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deadlineInfo"
+        android:text="12/22/2222"
+        android:textSize="16sp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/statusInfo"
+        app:layout_constraintLeft_toRightOf="@id/desImg"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_alarm2"
+        android:id="@+id/alarm"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@id/timer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reminderInfo"
+        android:text="reminder"
+        android:textSize="16sp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/deadlineInfo"
+        app:layout_constraintLeft_toRightOf="@id/desImg"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
